@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="page" id="page1">
+            <div>Current Position 當前位置: </div>
+            <div class="position">fgfg</div>
+        </div>
+        <div class="page" id="page2">
+            <div>Current Position 當前位置: </div>
+            <div class="position">fgfg</div>
+        </div>
+            
+        <div class="page" id="page3">
+            <div>Current Position 當前位置: </div>
+            <div class="position">fgfg</div>
+        </div>
+            
+        <div class="page" id="page4">
+            <div>Current Position 當前位置: </div>
+            <div class="position">fgfg</div>
+        </div>       
+
+        <script>
+            window.addEventListener("scroll", getPos);
+            window.addEventListener("resize", getPos);
+
+            function getPos () {
+                $('.position').html(document.body.scrollTop);
+            }
+        </script>
+    </body>
+</html>
